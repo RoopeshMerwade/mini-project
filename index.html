@@ -13,11 +13,11 @@
 </head>
 
 <body>
-    <div id="header" >
+    <div id="header">
         <div class="container">
             <nav>
                 <img src="logo3.png" class="logo">
-                <ul id="sidemenu" >
+                <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
@@ -157,7 +157,8 @@
                                 class="fa-brands fa-facebook"></i></a>
                         <a href="https://www.instagram.com/roopesh_merwade/?hl=en" target="_blank"><i
                                 class="fa-brands fa-instagram"></i></a>
-                        <a href="https://twitter.com/MerwadeRoopesh" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://twitter.com/MerwadeRoopesh" target="_blank"><i
+                                class="fa-brands fa-twitter"></i></a>
                     </div>
                     <a href="Roopesh Resume.pdf" download class="btn btn2">Download CV</a>
                 </div>
@@ -171,6 +172,9 @@
                     <span id="msg"></span>
                 </div>
             </div>
+        </div>
+        <div class="up">
+            <button class="Goup"><i class="fa-solid fa-caret-up fa-2xl"></i></button>
         </div>
         <div class="copyright">
             <p>Copyright @ Roopesh Made with <i class="fa-sharp fa-solid fa-heart"></i>, all rights reserved</p>
@@ -226,9 +230,19 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-            strings: ['Student', 'Tech Enthusiast','Web Developer'],
+            strings: ['Student', 'Tech Enthusiast', 'Web Developer', 'Photographer'],
             typeSpeed: 50,
         });
+    </script>
+    <script>
+        const UP = document.querySelector('.fa-caret-up');
+
+        UP.addEventListener('click', function () {
+            var headerElement = document.getElementById("header");
+            if (headerElement) {
+                headerElement.scrollIntoView({ behavior: "smooth" });
+            }
+        })
     </script>
 </body>
 
